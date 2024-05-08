@@ -18,7 +18,7 @@ public class CreditCard {
     private String number;
     private String expireDate;
     private Integer ctrlNumber;
-    @Enumerated(EnumType.STRING)
+    @Convert(converter = CreditCardTypeConvertor.class)
     private CreditCartType cartType;
 
 }
